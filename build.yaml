@@ -14,4 +14,8 @@
 ---
 include:
   - board: nice_nano_v2
+    shield: cockpit
+  - board: nice_nano_v2
     shield: contra
+  - board: nice_nano_v2
+    shield: reviung41
