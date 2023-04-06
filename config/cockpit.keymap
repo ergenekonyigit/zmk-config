@@ -52,7 +52,8 @@
 #define _LOWER 1
 #define _RAISE 2
 #define _NAVIGATION 3
-#define _ADJUST 4
+#define _NAV 4
+#define _ADJUST 5
 
 
 / {
@@ -72,7 +73,7 @@
 // ╰──────┴──────┴──────┴──────┴──────┴──────┼─────────┬─────────┼──────┴──────┴──────┴──────┴──────┴──────╯
 //                                           │   MPLY  │  MUTE   │
 //                     ╭──────┬──────┬───────┼─────────┴─────────┼──────┬──────┬──────╮
-//                     │  ALT │ CMD  │  SPC  │                   │ SPC  │LOWER │RAISE │
+//                     │  ALT │ CMD  │  SPC  │                   │ NAV  │LOWER │RAISE │
 //                     ╰──────┴──────┴───────┴─────┬──────┬──────┴──────┴──────┴──────╯
 //                                                 │  UP  │
 //                                          ╭──────┼──────┼──────╮
@@ -86,7 +87,7 @@
    &mt LCTL ESC &kp A &kp S &kp D &kp F &kp G             &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &kp LSHFT    &kp Z &kp X &kp C &kp V &kp B             &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &lt _NAVIGATION RET
                                      &kp C_PLAY_PAUSE  &kp C_MUTE
-                    &kp LALT &kp LGUI &kp SPACE              &kp SPACE &mo _LOWER  &mo _RAISE
+                    &kp LALT &kp LGUI &kp SPACE              &mo _NAV &mo _LOWER  &mo _RAISE
                                                &kp UP_ARROW
                                &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
 
@@ -106,7 +107,7 @@
 // ╰──────┴──────┴──────┴──────┴──────┴──────┼─────────┬─────────┼──────┴──────┴──────┴──────┴──────┴──────╯
 //                                           │   MPLY  │  MUTE   │
 //                     ╭──────┬──────┬───────┼─────────┴─────────┼──────┬──────┬──────╮
-//                     │  ALT │ CMD  │  SPC  │                   │ SPC  │LOWER │RAISE │
+//                     │  ALT │ CMD  │  SPC  │                   │ NAV  │LOWER │RAISE │
 //                     ╰──────┴──────┴───────┴─────┬──────┬──────┴──────┴──────┴──────╯
 //                                                 │  UP  │
 //                                          ╭──────┼──────┼──────╮
@@ -119,7 +120,7 @@
    &mt LCTL ESC  &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH      &kp F1    &kp F2    &kp F3    &kp F4    &kp F5    &kp F6
    &kp LSHFT     &none     &none     &none     &none     &none         &kp F7    &kp F8    &kp F9    &kp F10   &kp F11   &kp F12
                                                 &kp C_PLAY_PAUSE  &kp C_MUTE
-                          &kp LALT &kp LGUI &kp SPACE              &kp SPACE  &trans &mo _ADJUST
+                          &kp LALT &kp LGUI &kp SPACE              &mo _NAV &trans &mo _ADJUST
                                                       &kp UP_ARROW
                                       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
                         >;
@@ -136,7 +137,7 @@
 // ╰──────┴──────┴──────┴──────┴──────┴──────┼─────────┬─────────┼──────┴──────┴──────┴──────┴──────┴──────╯
 //                                           │   MPLY  │  MUTE   │
 //                     ╭──────┬──────┬───────┼─────────┴─────────┼──────┬──────┬──────╮
-//                     │  ALT │ CMD  │  SPC  │                   │ SPC  │LOWER │RAISE │
+//                     │  ALT │ CMD  │  SPC  │                   │ NAV  │LOWER │RAISE │
 //                     ╰──────┴──────┴───────┴─────┬──────┬──────┴──────┴──────┴──────╯
 //                                                 │  UP  │
 //                                          ╭──────┼──────┼──────╮
@@ -149,7 +150,7 @@
    &mt LCTL ESC  &kp UNDER &kp PLUS &kp LBRC &kp RBRC &kp PIPE       &kp LEFT  &kp DOWN &kp UP    &kp RIGHT &kp GRAVE &kp TILDE
    &kp LSHFT     &trans    &trans   &trans   &trans   &trans         &kp HOME  &kp END  &kp PG_UP &kp PG_DN &kp PSCRN &kp RET
                                             &kp C_PLAY_PAUSE  &kp C_MUTE
-                          &kp LALT &kp LGUI &kp SPACE              &kp SPACE  &mo _ADJUST   &trans
+                          &kp LALT &kp LGUI &kp SPACE              &mo _NAV  &mo _ADJUST   &trans
                                                       &kp UP_ARROW
                                       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
                         >;
@@ -166,7 +167,7 @@
 // ╰──────┴──────┴──────┴──────┴──────┴──────┼─────────┬─────────┼──────┴──────┴──────┴──────┴──────┴──────╯
 //                                           │   MPLY  │  MUTE   │
 //                     ╭──────┬──────┬───────┼─────────┴─────────┼──────┬──────┬──────╮
-//                     │  ALT │ CMD  │  SPC  │                   │ SPC  │      │      │
+//                     │  ALT │ CMD  │  SPC  │                   │ NAV  │      │      │
 //                     ╰──────┴──────┴───────┴─────┬──────┬──────┴──────┴──────┴──────╯
 //                                                 │  UP  │
 //                                          ╭──────┼──────┼──────╮
@@ -179,7 +180,37 @@
    &mt LCTL ESC  &kp LEFT &kp DOWN &kp RIGHT &none &none   &none &none &none    &kp UP   &none     &none
    &kp LSHFT     &none    &none    &none     &none &none   &none &none &kp LEFT &kp DOWN &kp RIGHT &none
                                             &kp C_PLAY_PAUSE  &kp C_MUTE
-                          &kp LALT &kp LGUI &kp SPACE              &kp SPACE  &trans   &trans
+                          &kp LALT &kp LGUI &kp SPACE              &mo _NAV  &trans   &trans
+                                                      &kp UP_ARROW
+                                      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
+                        >;
+                };
+
+                nav_layer {
+
+// ╭──────┬──────┬──────┬──────┬──────┬──────╮                   ╭──────┬──────┬──────┬──────┬──────┬──────╮
+// |      |      |  up  |      |      |      |                   |      |      |  up  |      |      | lock |
+// ├──────┼──────┼──────┼──────┼──────┼──────┤                   ├──────┼──────┼──────┼──────┼──────┼──────┤
+// | ctrl | left | down |right |      |      |                   |      | left | down |right |      |      |
+// ├──────┼──────┼──────┼──────┼──────┼──────┤                   ├──────┼──────┼──────┼──────┼──────┼──────┤
+// |shift |      |      |      |      |      |                   |      |      |      |      |      |      |
+// ╰──────┴──────┴──────┴──────┴──────┴──────┼─────────┬─────────┼──────┴──────┴──────┴──────┴──────┴──────╯
+//                                           │   MPLY  │  MUTE   │
+//                     ╭──────┬──────┬───────┼─────────┴─────────┼──────┬──────┬──────╮
+//                     │  ALT │ CMD  │  SPC  │                   │      │      │      │
+//                     ╰──────┴──────┴───────┴─────┬──────┬──────┴──────┴──────┴──────╯
+//                                                 │  UP  │
+//                                          ╭──────┼──────┼──────╮
+//                                          │ LEFT │ DOWN │ RIGHT│
+//                                          ╰──────┴──────┴──────╯
+
+
+                        bindings = <
+   &none         &none    &kp UP   &none     &none &none   &none &none    &kp UP   &none     &none &kp _LOCKSCREEN
+   &mt LCTL ESC  &kp LEFT &kp DOWN &kp RIGHT &none &none   &none &kp LEFT &kp DOWN &kp RIGHT &none &none
+   &kp LSHFT     &none    &none    &none     &none &none   &none &none    &none    &none     &none &none
+                                            &kp C_PLAY_PAUSE  &kp C_MUTE
+                          &kp LALT &kp LGUI &kp SPACE              &trans  &trans   &trans
                                                       &kp UP_ARROW
                                       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
                         >;
