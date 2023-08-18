@@ -1,16 +1,25 @@
 ## ZMK Configs for various keyboards
 
-### Cockpit Layout
+This repo contains my personal ZMK configs for various keyboards.
 
-![IMG_4203](https://user-images.githubusercontent.com/7110136/201444136-4f72d951-daf3-4c27-ac4d-0e03d24330e4.jpeg)
+### Status of the keyboards
 
-### Contra Layout
+| Keyboard  | Status    |
+| --------- | --------- |
+| Cockpit   | Available |
+| Contra    | Available |
+| Reviung41 | Available |
 
-![IMG_3076](https://user-images.githubusercontent.com/7110136/201444215-58d8ba59-9fa6-4869-be7f-27f6ce904f1b.jpeg)
+### Cockpit
 
-### Reviung41 Layout
+![cockpit](./images/cockpit.jpg)
 
-![reviung41](https://user-images.githubusercontent.com/7110136/137787452-c1bbdd2c-bd71-4231-9210-0a4ad3832f11.jpg)
+### Contra
 
+![contra](./images/contra.jpg)
+
+### Reviung41
+
+![reviung41](./images/reviung41.jpg)
 
 Check out the website to learn more: https://zmk
